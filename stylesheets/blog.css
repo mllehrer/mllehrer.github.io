@@ -1,0 +1,18 @@
+body { background-color: #51EBFF;
+  font-family: "Georgia", serif
+}
+h1 {
+border-bottom: 5px dotted white;
+text-align:center;
+}
+figure {
+  border-top: 5px solid #DBC85E;
+text-align:center;
+}
+figcaption {
+color: black;
+align:center;
+}
+nav {
+  color: white;
+  text-align:center;}
