@@ -16,3 +16,53 @@ align:center;
 nav {
   color: white;
   text-align:center;}
+
+<style>
+  #header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+#section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+#footer {
+    position: fixed;
+    margin-bottom: 0;
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+#block {
+  background-color: pink;
+  text-align: center;
+  padding: 2px;
+}
+
+#block-2 {
+  background-color: pink;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#block-3 {
+  background-color: pink;
+  text-align: center;
+  padding: 2px;
+  border: 2px dotted white;
+}
+</style>
