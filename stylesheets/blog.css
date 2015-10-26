@@ -1,21 +1,33 @@
-body { background-color: #51EBFF;
-  font-family: "Georgia", serif
+body { background-color: blanchedalmond;
+  font-family: "Georgia", serif;
+  margin-right: 3em;
+  margin-left: 3em;
 }
 h1 {
-border-bottom: 5px dotted white;
-text-align:center;
+border: 5px dotted white;
+text-align: center;
+background-color: grey;
+padding-top: 1em;
+padding-bottom: 1em;
 }
 figure {
   border-top: 5px solid #DBC85E;
-text-align:center;
+margin-left: auto;
+margin-right: auto;
+width: 25em;
 }
 figcaption {
-color: black;
-align:center;
+color: chocolate;
+text-align: center;
 }
 nav {
   color: white;
   text-align:center;}
+code {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25 px;
+}
 
 <style>
   #header {
