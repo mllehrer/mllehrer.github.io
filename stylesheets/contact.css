@@ -25,7 +25,14 @@ text-align: center;
 nav {
   color: white;
   text-align:center;
+  padding-top: 10em
   }
   a:visited {
     color: azure;
+  }
+  a:link {
+    color: white;
+  }
+  p {
+    text-align: center;
   }
