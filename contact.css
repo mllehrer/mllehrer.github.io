@@ -1,0 +1,31 @@
+body { background-color: blanchedalmond;
+  font-family: "Georgia", serif;
+  margin-right: 3em;
+  margin-left: 3em;
+  border-left: 5em chocolate;
+  border-right: 5em chocolate;
+}
+h1 {
+border: 5px dotted white;
+text-align: center;
+background-color: grey;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+figure {
+  border-top: 5px solid #DBC85E;
+margin-left: auto;
+margin-right: auto;
+width: 25em;
+}
+figcaption {
+color: chocolate;
+text-align: center;
+}
+nav {
+  color: white;
+  text-align:center;
+  }
+  a:visited {
+    color: azure;
+  }
