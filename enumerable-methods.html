@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Malia Lehrer's Bootcamp Blog</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <h1>Malia Lehrer's Bootcamp Blog</h1>
+  <nav>
+      <a href="/index.html">Back to landing page</a>
+  </nav>
+  <figure>
+      <img src="../imgs/corsola002.png">
+      <figcaption>Hello!</figcaption>
+  </figure>
+  <section>
+  <h2>Ruby Week 1</h2>
+  <h3>The only hash I'm interested in right now contains potatoes and cheese.</h3>
+  <h4>10/25/2015</h4>
+      <div id="header">Arrays and Hashes</div>
+      <p>Ruby includes two main ways to make list objects: Arrays and Hashes. Both can store strings, integers, floats, and lists. They can even store other arrays and hashes. More about each below.</p>
+  <figure>
+      <code> my_array = ["These", 4, "objects", "can be" ["part", "of", "an", "array"], {:key => "So can hashes"}]</code>
+  <figcaption>An array</figcaption>
+  <code>
+        my_hash = {:key => "Every hash has a key and a value"
+          :otherkey => "The keys work the same as calling array[n]"
+          :anotherkey => "All keys must be unique."
+          :numberofkeyshere => 4
+      }
+    </code>
+      <figcaption>A hash</figcaption>
+  </figure>
+  <b>Arrays</b>
+  <p>An arrays is an ordered list of things. Arrays assign an index number to each element inside, starting at 0 and ending in the length of the array-1. You can ask the program to return an element in an array by calling its index. In the array above, <code>my_array[0]</code> would return <code>"These</code>. The index of an array cannot change unless you tell it to switch the order. So let's say we wanted to make our array talk like Shakespeare. Calling <code>my_array[1], my_array[2] = my_array[2], my_array[1]</code> would make the inside of the array read "These objects 4" instead of "These 4 objects."</p>
+  <p>You can perform an action on one specific element in an array by calling it just on that element's index: <code>my_array[1].to_s</code> would turn the 4 into a string of "4". You can also perform an action on every object in an array by using the <each> or <map> command. <code>my_breakfast = ["eggs", "tortilla", "cheese", "coffee"]
+    my_breakfast.each { |food| puts food }</code>
+    Prints to the console
+    <code>
+    "eggs"
+    "tortilla"
+    "cheese"
+    "coffee"
+  </code>
+  I'm hungry.</p>
+  <b>Hashes</b>
+  <p>We can think of hashes as a more customizable version of an array. We haven't actually done that much with them at DBC, so I can't say I know as much about them as I do about arrays. Above I mentioned that every array has an index--array[number of element]--and an element. Hashes instead allow the user to assign keys instead of having a built-in index. Since the keys function as an index, they must be unique within each hash. Having customizable keys allows an extra layer of information within the list. Keys can be symbols like we saw above or they can be strings. Since a symbol is unique within a piece of code, it takes less time to process because ruby doesn't have to keep making sure it means the same thing, like it does with a string. </p>
+    <p>Let's make a breakfast hash (Oh do I WISH):
+    <code> my_breakfast = { :protein => "eggs"
+      :carbs => "tortilla"
+      :happiness => "cheese"
+      :lifeblood => "coffee"
+    }
+  </code>
+  Great! Now if you want to know what the protein in today's breakfast will be, you can ask it for <code>my_breakfast[:protein]</code>
+  Strings would be a better choice than symbols if we were making a number of breakfast hashes for the days of the week. With a symbol, only one hash can have a :protein key. With a string, you can have "protein" keys for every hash, because you should have protein in every breakfast unless you are a rabbit.
+  And you are not a rabbit.
+  Rabbits can't type.</p>
+  <p>
+  You'll want to use a hash instead of an array when you need the extra layer of information the keys provide.
+    </p>
+  </section>
+</main>
+<footer>
+  <div id="footer">I don't know what to put in this footer yet.</div>
+</footer>
+</body>
+</html>
