@@ -10,12 +10,11 @@ text-align: center;
 background-color: grey;
 padding-top: 1em;
 padding-bottom: 1em;
-width: 80%;
+width: 90%;
 }
 figure {
   border-top: 5px solid #DBC85E;
 align: center;
-width: 25em;
 }
 figcaption {
 color: brown;
