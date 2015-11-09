@@ -17,7 +17,8 @@ p {
 }
 figure {
   border-top: 5px solid #DBC85E;
-align: center;
+margin-right: auto;
+margin-left: auto;
 }
 figcaption {
 color: brown;

@@ -29,23 +29,24 @@
   <li>Classes can make a bunch of objects. Let's make a Pokemon! How about Corsola, the cute little guy up top?</li>
 
   <code>
-        class Pokemon
-        def initialize(name, number, type1, type2=nil) #some pokemon have two types and some only have one
-        @name = name
-        @number = number
-        @type1 = type1
-        @type2 = type2
-        end
-        #All of those are instance variables. Here's an instance method.
+        class Pokemon<br>
+        def initialize(name, number, type1, type2=nil) #some pokemon have two types and some only have one<br>
+        @name = name<br>
+        @number = number<br>
+        @type1 = type1<br>
+        @type2 = type2<br>
+        end<br>
+        #All of those are instance variables. Here's an instance method.<br>
+        <br>
 
-        def describe_pokemon
-          if @type2 == nil
-            puts "This new Pokemon is called #{@name} and is number #{@number} in the Pokedex! It's a #{type1} type."
-          else
-            puts "This new Pokemon is called #{@name} and is number #{@number} in the Pokedex! It's a #{type1} and #{type2} type."
-        end
-corsola = Pokemon.new("Corsola", 222, "water", "rock")
-corsola.describe_pokemon
+        def describe_pokemon<br>
+          if @type2 == nil<br>
+            puts "This new Pokemon is called #{@name} and is number #{@number} in the Pokedex! It's a #{type1} type."<br>
+          else<br>
+            puts "This new Pokemon is called #{@name} and is number #{@number} in the Pokedex! It's a #{type1} and #{type2} type."<br>
+        end<br>
+corsola = Pokemon.new("Corsola", 222, "water", "rock")<br>
+corsola.describe_pokemon<br>
   "This new Pokemon is called Corsola and is number 222 in the Pokedex! It's a water and rock type."
   </code>
   <p>We made a Pokemon! We can make as many more as we want--and there are over 700 of them now.</p>
