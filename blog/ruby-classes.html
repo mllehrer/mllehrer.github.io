@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Malia Lehrer's Bootcamp Blog</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <h1>Malia Lehrer's Bootcamp Blog</h1>
+  <nav>
+      <a href="/index.html">Back to landing page</a>
+  </nav>
+  <figure>
+      <img src="../imgs/corsola002.png">
+      <figcaption>Hello!</figcaption>
+  </figure>
+  <section>
+  <h2>Ruby Week 3</h2>
+  <h3>Classy stuff</h3>
+  <h4>10/25/2015</h4>
+      <div id="header">Classes in Ruby</div>
+      <p>Ruby is an object-oriented programming language; instead of building programs along procedures (if-then-else) alone, it is composed of a set of objects that have data and behavior. So within an object, there may be if-then-elses, and they can interact with other if-then-elses. In this way, programs can model the "real world" as a set of interactive objects, and can function in ways that a procedural program might not. A <em>class</em> is one way to build such objects.</p>
+ <ul>
+  <li>A class name should start with a capital letter.</li>
+  <li>Classes can have "instance variables" that remain consistent unless changed throughout the class. These are denoted by an @ in front of the variable name.</li>
+  <li>A class can be set up with these variables using an "initialize" method, like in the example below.</li>
+  <li>Classes can have several methods. As a rule, though, if the methods start to diverge too much from each other, you should continue creating a new class to hold the most differing methods.</li>
+  <li>Methods that can be called throughout the class (the same way instance variables can be) are called "instance" methods.</li>
+  <li>Classes can make a bunch of objects. Let's make a Pokemon! How about Corsola, the cute little guy up top?</li>
+
+  <code>
+        class Pokemon
+        def initialize(name, number, type1, type2=nil) #some pokemon have two types and some only have one
+        @name = name
+        @number = number
+        @type1 = type1
+        @type2 = type2
+        end
+        #All of those are instance variables. Here's an instance method.
+
+        def describe_pokemon
+          if @type2 == nil
+            puts "This new Pokemon is called #{@name} and is number #{@number} in the Pokedex! It's a #{type1} type."
+          else
+            puts "This new Pokemon is called #{@name} and is number #{@number} in the Pokedex! It's a #{type1} and #{type2} type."
+        end
+corsola = Pokemon.new("Corsola", 222, "water", "rock")
+corsola.describe_pokemon
+  "This new Pokemon is called Corsola and is number 222 in the Pokedex! It's a water and rock type."
+  </code>
+  <p>We made a Pokemon! We can make as many more as we want--and there are over 700 of them now.</p>
+  </section>
+</main>
+<footer>
+  <div id="footer">I don't know what to put in this footer yet.</div>
+</footer>
+</body>
+</html>
