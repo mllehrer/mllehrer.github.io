@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Malia Lehrer's Bootcamp Blog</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <h1>Malia Lehrer's Bootcamp Blog</h1>
+  <nav>
+      <a href="/index.html">Back to landing page</a>
+  </nav>
+  <figure>
+      <img src="../imgs/corsola002.png">
+      <figcaption>Hello!</figcaption>
+  </figure>
+  <section>
+  <h2>JavaScript week 1</h2>
+  <h3>Needs more coffee, fewer semicolons.</h3>
+  <h4>11/15/2015</h4>
+  <div id="header">Ruby hashes vs. JavaScript objects</div>
+  <p>Both Ruby and JavaScript are object-oriented languages, which means they are composed of objects that have data and behavior, instead of just a set of procedures that access and use data. Ruby has two data types that act as lists: a data type called an array, which is an ordered list of values, and a hash, which is a list of ordered, unique keys that access values. A Ruby array looks like this:</p><br>
+    <code>ruby_array = ["these", "are", "values", "numbered 0-3"]</code><br>
+  <p>and a hash looks like this:</p><br>
+    <code>corsola_hash = { name: "Corsola", animal: "Pokemon", number: 222 }</code><br>
+    <p>A JavaScript array looks just like a Ruby array, but Javascript doesn't have a hash type of data structure. Instead, it can store data in an "object" which has "properties" -- properties that happen to look like the key-value pairs in a Ruby hash.</p><br>
+    <code>var corsolaObject = {<br>
+      name: "Corsola",<br>
+      animal: "Pokemon",<br>
+      number: 222<br>
+  }</code><br>
+  <p>JavaScript objects have a cool feature they do not share with Ruby hashes: they can be changed from anywhere in the program very simply. If you want to add a property to a JavaScript object, you just pretend it already exists. For instance, say we want to add Corsola's types to its object. Typing </p>
+  <code>corsolaObject.type1 = "Water"</code> will add the "Water" type to the Corsola object.
+  </section>
+</main>
+<footer>
+  <div id="footer">I don't know what to put in this footer yet.</div>
+</footer>
+</body>
+</html>
