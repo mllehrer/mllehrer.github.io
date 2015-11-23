@@ -1,6 +1,5 @@
 body {
   background-color: blanchedalmond;
-  text-align: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
    font-size: 100%;
@@ -24,6 +23,8 @@ ul {
 a {
     display: block;
     background-color: grey;
+    border-style: double;
+    border-color: white;
     width: 5em;
     margin-left: 0;
     margin-right: 0;
