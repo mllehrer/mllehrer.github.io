@@ -1,12 +1,12 @@
 body {
-  background-color: blanchedalmond
+  background-color: blanchedalmond;
   text-align: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
    font-size: 100%
 }
 header {
-  background-color: grey
+  background-color: grey;
   color: white;
   border-style: double;
   border-color: white;
@@ -31,14 +31,14 @@ a {
 
 code {
   display: block;
-  width: 5em;
+  width: 10em;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
 }
 
 footer {
-  background-color: grey
+  background-color: grey;
   color: white;
   border-style: double;
   border-color: white;
