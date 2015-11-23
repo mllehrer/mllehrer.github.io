@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phase 0 Cheat Sheet</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/newcss.css">
+</head>
+<body>
+<header>
+<h1>Phase 0 Cheat Sheet</h1>
+  <ul>
+  <li><a href="index.html">Home page</a></li>
+  <li><a href="blog/index.html">Blog</a></li>
+  </ul>
+</header>
+<h2>Html and CSS cheat sheet</h2>
+<p>Tonight, I fix my goddamn website.</p><br>
+<p>Every element has an invisible box around it. You can make them visible by defining a border and padding. You can move them around on the page by specifying margins.</p>
+<p>First of all, blocks vs. inline: block elements take up the full width of space available and start on a new line, while inline elements only happen within the line. So < h1> is a block element but < a> is an inline element.</p><br>
+<p>When you're making a CSS stylesheet, the syntax goes:
+  <code> element {
+    property: value;
+    property: value;
+  }</code>
+  <p>Please don't forget your semicolons. Someday, when you have time to edit the photo, this is going to have a background image. To stick that in and keep it fixed on the page, you're going to do</p>
+    <code> body {
+      background-image: url;
+      background-repeat: no-repeat;
+      background-position: fixed;
+    }
+  </code>
+  <p>You were confused about em. 1em is equal to the current font size, in pixels. So if the font size is 16px, 1em = 16px. If you change the font size, you change em, so be careful. W3schools suggests changing the font-size to 100% and then just operating in em so probably do that.</p><br>
+  <p>To format links:</p>
+    <code>a:link - a normal, unvisited link
+a:visited - a link the user has visited
+a:hover - a link when the user mouses over it
+a:active - a link the moment it is clicked</code>
+<p> you can remove the underline by setting text-decoration to "none"</p>
+<p>Border styles</p>
+<code>dotted - Defines a dotted border<br>
+dashed - Defines a dashed border<br>
+solid - Defines a solid border<br>
+double - Defines a double border<br>
+groove - Defines a 3D grooved border. The effect depends on the border-color value<br>
+ridge - Defines a 3D ridged border. The effect depends on the border-color value<br>
+inset - Defines a 3D inset border. The effect depends on the border-color value<br>
+outset - Defines a 3D outset border. The effect depends on the border-color value<br>
+none - Defines no border<br>
+hidden - Defines a hidden border<br>
+</code>
+<p>This should look better than the other pages.</p>
+<footer>More to come</footer>
+</body>
