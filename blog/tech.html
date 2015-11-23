@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Malia Lehrer's Bootcamp Blog</title>
+<meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+<body>
+  <h1>Malia Lehrer's Bootcamp Blog</h1>
+  <nav>
+      <a href="/index.html">Back to landing page</a>
+  </nav>
+  <figure>
+      <img src="../imgs/corsola002.png">
+      <figcaption>Hello!</figcaption>
+  </figure>
+  <section>
+  <h2>Dynamic vs. Static typing</h2>
+  <h3>People keep talking about this like we should know what it is.</h3>
+  <h4>11/22/2015</h4>
+  <div id="header">Typecasting</div>
+  <p>Ok, I'm going to confess to this now: I really thought that when people referred to Ruby and JavaScript as "dynamically typed languages", it had to do with how characters were put into the computer somehow. Like, how they were typed. With your keyboard.</p><br>
+  <p>I didn't know why, exactly, this would matter, or what it would mean, but it was the only thing I could think of. So I was pretty thrilled to actually look it up. Of course, like everything else on the internet, I found mostly arguments.</p><br>
+  <p>The basics: the "types" referred to in dynamic and static types are data types. There's a second bit to this: besides "dynamic" and "static," there's also "weak" and "strong" types, which are actually something we've had the chance to compare.</p><br>
+  <div id="header">What's a type system?</div>
+  <p>In order to understand dynamic vs. static typing, we have to understand a type system. When languages assign a "type" to data, they are giving the data--which at the base is just a set of bits--meaning. For example, "Types" in Ruby are strings, integers, floats, and booleans. Types in JavaScript are strings, numbers, and booleans.<br>
+  A type system allows a computer to catch errors like trying to multiply 5, say, by "purple". 5 is an integer type, and "purple" is a string, so being able to issue an error immediately saves valuable time and energy and stops the computer from making a nonsense output.</p><br>
+  <div id="header">Dynamic vs. Static types</div>
+  <p>Both Ruby and JavaScript are dynamically typed languages. In a dynamically typed language, once a variable is assigned to data of one time, it can be changed later to data of another type. For example, let us consider unfortunate convict Jean Valjean. When Jean Valjean is in the world, <code>who_am_i = "Jean Valjean"</code>. But when Jean Valjean is thrown in prison, <code>who_am_i = 24601</code>. Such an operation (changing a string to an integer) is legal in a dynamically typed language, but would throw an error in a statically typed language, which does not allow changing a variable's data from one type to another.</p><br>
+  <p>This is the internet, so of course there's an argument. Static typed languages like C, C++, Java, Scala, Haskell, and, yes, Fortran (along with many more) are harder to program initially but because they catch errors right away, they have less of a chance of human error causing a bug; a dynamic typed language will try much harder to run a typo than a static typed language.<br>
+  Dynamic typed languages like Ruby, JavaScript, PHP, Perl, Smalltalk, Lisp, and more, can be easier to program in because they create more elastic, forgiving programs. The internet seems to mostly think that prototypes and small things that need to change a lot should be done in dynamic-typed languages, and big, heavy systems with a need for stability over development speed should be done in static-typed systems.<br>
+  The internet was much less civil in expressing that opinion.</p><br>
+  <p><em>Strong vs. weak types (a bonus):</em> Although we have only worked with dynamic-typed languages, we have worked with one strong-typed language--Ruby--and one weak-typed language: JavaScript. In strong typing, a variable's type cannot be coerced into another type: <code>3</code> is not divisible by <code>"3"</code> and will throw an error. But in weak typing, the language will attempt to perform the operation, and <code>3/"3"</code> will generate <code>1</code>.
+  </section>
+</main>
+<footer>
+  <div id="footer">I don't know what to put in this footer yet.</div>
+</footer>
+</body>
+</html>
