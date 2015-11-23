@@ -3,7 +3,7 @@ body {
   text-align: center;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
    font-weight: 300;
-   font-size: 100%
+   font-size: 100%;
    margin-right: 10em;
    margin-left: 10em;
 }
@@ -23,7 +23,10 @@ ul {
 
 a {
     display: block;
+    background-color: grey;
     width: 5em;
+    margin-left: 0;
+    margin-right: 0;
     padding: 4px;
     font-weight: bold;
     text-align: center;
@@ -33,7 +36,8 @@ a {
 
 code {
   display: block;
-  width: 10em;
+  width: 30%;
+  background-color: azure;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
