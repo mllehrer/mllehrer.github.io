@@ -1,0 +1,45 @@
+body {
+  background-color: blanchedalmond
+  text-align: center;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+   font-size: 100%
+}
+header {
+  background-color: grey
+  color: white;
+  border-style: double;
+  border-color: white;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    width: 5%;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+code {
+  display: block;
+  width: 5em;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  background-color: grey
+  color: white;
+  border-style: double;
+  border-color: white;
+}
