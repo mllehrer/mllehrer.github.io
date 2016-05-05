@@ -2,12 +2,40 @@
 <html lang="en">
 <head>
   <!--Thanks to w3schools for the tutorial!-->
-  <title>Malia Lehrer DBC</title>
+  <title>Mia Lehrer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.25/paper-full.js"></script>
+ <script type="text/paperscript" canvas="draw-canvas">
+tool.minDistance = 10;
+
+var path;
+
+function onMouseDown(event) {
+	// Create a new path and select it:
+	path = new Path();
+	path.strokeColor = {
+		hue: Math.random() * 360,
+		saturation: 1,
+		brightness: 1,
+	};
+
+	// Add a segment to the path where
+	// you clicked:
+	path.add(event.point);
+}
+
+function onMouseDrag(event) {
+	// Every drag event, add a segment
+	// to the path at the position of the mouse:
+	path.add(event.point);
+}
+
+</script>
+  
 <style>
   .bg-1 {
       background-color: #054018;
@@ -66,10 +94,11 @@
 </nav>
 <div class="bg-1">
   <div class="container text-center">
-  <h3>Hi, I'm Mia!</h3>
-  <img src="https://mllehrer.files.wordpress.com/2015/08/img_6154.jpg"
-   class="img-circle" width="350" height="468" alt="Author with rock">
-  <h3>I make things and identify rocks.</h3>
+  <h3>Draw funny things on Donald Trump!</h3>
+  <div id="canvas-div">
+    	<canvas id="draw-canvas" width="300" height="300" style="background: url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Donald_Trump_August_19,_2015_(cropped).jpg')"></canvas>
+    </div>
+  <h3>(Please hire me.)</h3>
 </div>
 <div class="container-fluid bg-3 text-center">
   <div class="row">
